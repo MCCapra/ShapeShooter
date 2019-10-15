@@ -314,6 +314,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -387,6 +388,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaa70e150a33fe544b26acce45b81fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotSpeed: 10
+  moveSpeed: 0.1
+  sphereBullte: {fileID: 1202150960143131097, guid: 3d831bf1be23f554e89688b5298d7ab0,
+    type: 3}
+  cubeBullet: {fileID: 8932673866451170746, guid: 46e424d7447ec22439433d7e583597ab,
+    type: 3}
+  cylBullet: {fileID: 7236660930435338119, guid: b524cd9ee9ee2824ca16a4dad5cc5633,
+    type: 3}
+  currBulletState: {fileID: 1275136669}
+  h: 0
+  v: 0
 --- !u!1 &1275136669
 GameObject:
   m_ObjectHideFlags: 0
