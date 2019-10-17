@@ -16,6 +16,8 @@ public class CameraMovement : MonoBehaviour
     private float h, v, pitch, yaw;
 
     private int bulletState;
+
+    public bool CanShoot;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +25,7 @@ public class CameraMovement : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
 
         bulletState = currBulletState.GetComponent<ChangeMissile>().curMissileInd;
+        CanShoot = true;
     }
 
     // Update is called once per frame
@@ -71,7 +74,7 @@ public class CameraMovement : MonoBehaviour
 
     void Shoot()
     {
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(0) && CanShoot)
         {
             switch (bulletState)
             {
