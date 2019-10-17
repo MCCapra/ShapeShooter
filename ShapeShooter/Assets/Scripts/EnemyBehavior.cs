@@ -58,14 +58,12 @@ public class EnemyBehavior : MonoBehaviour
                 if(collision.gameObject.transform.tag == "SphereBullet")
                 {
                     Destroy(this.gameObject);
-                    Debug.Log("Hit Sphere");
                 }
                 break;
             case 3:
                 if(collision.gameObject.transform.tag == "CylinderBullet")
                 {
                     Destroy(this.gameObject);
-                    Debug.Log("Hit Cylinder");
                 }
                 break;
             default:
